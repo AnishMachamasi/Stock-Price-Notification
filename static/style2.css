@@ -1,0 +1,79 @@
+/* style.css */
+
+/* reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* global styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f8f8f8;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* specific styles for subscriber.html */
+body {
+    background-color: #fff;
+}
+
+h1 {
+    text-align: center;
+    color: #0055a5;
+}
+
+p {
+    text-align: center;
+    color: #333;
+}
+
+/* media query for smaller screens */
+@media (max-width: 767px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+.btn {
+
+    margin: 50px auto 0;
+    display: block;
+    padding: 10px 20px;
+    background-color: #008CBA;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #006B9F;
+  }
+  
+  .home-button {
+    display: block;
+    margin: 50px auto 0;
+    text-align: center;
+}
