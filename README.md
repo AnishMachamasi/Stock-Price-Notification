@@ -26,4 +26,4 @@ For this project, we have used API of Yahoo Finance to retrieve the stock market
 For retrieving the stock market data for different ticker symbol, we first scheduled a job to run at the specified frequency in a loop. For this, we used Schedule library.
 
 ## Detail documentaion
-Available at https://drive.google.com/file/d/1t2BGwt5XTUUFgIjcx0f4eH91LXJUmv1K/view?usp=share_link
+Available at https://drive.google.com/file/d/1f7bh-zyZ1F89piTwkAs6CORcUY2CIK7a/view?usp=share_link
