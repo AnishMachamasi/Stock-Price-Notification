@@ -69,7 +69,7 @@ def subscribe():
         headers = {
             # "X-RapidAPI-Key": "52ceb5a784msh9c0e480a52d97ecp1dd28ejsn40bcebde0cae",
             # "X-RapidAPI-Host": "apidojo-yahoo-finance-v1.p.rapidapi.com"
-            "X-RapidAPI-Key": "977ca49af4msh65debae086d8b56p12be33jsn2c3e18631aeb",
+            "X-RapidAPI-Key": "yahoo_finance_api",
 	        "X-RapidAPI-Host": "apidojo-yahoo-finance-v1.p.rapidapi.com"
         }
         response = requests.get(url, headers=headers, params=querystring)
@@ -111,8 +111,8 @@ def subscribe():
 def send_notification(symbol, threshold, given_threshold, df_filtered, reciepient, phone, notification_type):
     if notification_type == "mail":
         # Replace the placeholders with your email and password
-        email = 'aneeshmacha11@gmail.com'
-        password = 'umorpgvkivkpgxrx'
+        email = 'sender_email_address'
+        password = 'sender_password'
         recipient = reciepient
 
         if given_threshold:
@@ -138,8 +138,8 @@ def send_notification(symbol, threshold, given_threshold, df_filtered, reciepien
         smtp_server.quit()
         
     elif notification_type == "text_message":
-        account_sid = 'AC762b1613ee198ceb5815658ca5a44101'
-        auth_token = '510755a6aebd1995442dbaacb05d26dd'
+        account_sid = 'sid_code'
+        auth_token = 'token'
         client = Client(account_sid, auth_token)
         if given_threshold:
             body = f"Stock {symbol} has reached the price {threshold}."
